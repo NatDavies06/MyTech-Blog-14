@@ -3,7 +3,7 @@ const { User } = require('../../models');
 
 router.post('/login', async (req, res) => {
   try {
-    // Find the user who matches the posted e-mail address
+    // Find user by e-mail
     const userData = await User.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
@@ -13,7 +13,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    // Verify the posted password with the password store in the database
+    // Verify password in database
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -38,7 +38,6 @@ router.post('/login', async (req, res) => {
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
-    // Remove the session variables
     req.session.destroy(() => {
       res.status(204).end();
     });
