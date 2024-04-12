@@ -1,2 +1,4 @@
 DS_Strore
 .env
+package.lock.json
+.vscode
