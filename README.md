@@ -1,8 +1,8 @@
-# Tech Blog View
+# Tech Blog
 
 ## Overview
 
-Tech Blog View is a CMS-style blog site where developers can publish articles, blog posts, and share their thoughts and opinions on various technical concepts and recent advancements in technology.
+Tech Blog is a CMS-style blog site where developers can publish articles, blog posts, and share their thoughts and opinions on various technical concepts and recent advancements in technology.
 
 ## Features
 
