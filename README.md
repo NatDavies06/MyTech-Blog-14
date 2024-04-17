@@ -1,34 +1,46 @@
-# Tech Blog
+# MyTech Blog
 
 ## Overview
 
-Tech Blog is a CMS-style blog site where developers can publish articles, blog posts, and share their thoughts and opinions on various technical concepts and recent advancements in technology.
+MyTech Blog is a CMS-style blog site where developers can publish articles, blog posts, and share their thoughts on others posts.
 
 ## Features
 
-- **User Authentication**: Users can sign up, log in, and log out securely to access the blog features.
+- User authentication (signup, login, logout)
+- View existing blog posts on the homepage
+- View individual blog posts with comments
+- Comment on blog posts
+- Create new blog posts
+- Update and delete blog posts from the dashboard
+- Auto logout after inactivity
 
-- **Homepage**: Display existing blog posts on the homepage with navigation links for easy access to other sections.
+## Installation
 
-- **Dashboard**: Logged-in users can access their dashboard to manage their blog posts, including creating, updating, and deleting posts.
+To use MyTech Blog, follow these steps.
 
-- **Comments**: Users can leave comments on existing blog posts.
+1. Clone the repository:
 
-- **Session Management**: Users are prompted to log in again if idle for a certain period.
+   `git clone https://github.com/NatDavies06/Model-View-14.git`
 
-## Technologies
+2. Install dependencies:
 
-- **Express.js**: Backend framework for handling HTTP requests and responses.
+   `npm install`
 
-- **Handlebars.js**: Templating engine for generating dynamic HTML content.
+3. Set up your MySQL database and update the 'config/config.json' file with you username and passwrod.
 
-- **Sequelize**: Promise-based ORM for interacting with the MySQL database.
+4. Create a '.env' file in the root directory and add the following eviroment.
 
-- **MySQL2**: MySQL database driver.
+   `DB_NAME=your_database_name`
+   `DB_USER=your_database_user`
+   `DB_PASSWORD=your_database_password`
 
-- **bcrypt**: Library for hashing p
+5. Run the application:
+   `npm start`
 
+## Demo
 
+* Coming Soon!!
+  
 ## Contributions
 
 This poject was developed as part of a bootcamp program, so I'm not accepting contriubtions at this time. Thank you!
