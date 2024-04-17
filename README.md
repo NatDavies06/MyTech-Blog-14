@@ -31,10 +31,13 @@ To use MyTech Blog, follow these steps.
 4. Create a '.env' file in the root directory and add the following eviroment.
 
    `DB_NAME=your_database_name`
+
    `DB_USER=your_database_user`
+
    `DB_PASSWORD=your_database_password`
 
-5. Run the application:
+6. Run the application:
+
    `npm start`
 
 ## Demo
